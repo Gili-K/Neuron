@@ -1,0 +1,193 @@
+
+./AMPANMDA_Syn.c: ../mod/AMPANMDA_Syn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) AMPANMDA_Syn.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./AMPANMDA_Syn.o: ./AMPANMDA_Syn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./AMPAg.c: ../mod/AMPAg.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) AMPAg.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./AMPAg.o: ./AMPAg.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./CaDynamics_E2.c: ../mod/CaDynamics_E2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) CaDynamics_E2.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./CaDynamics_E2.o: ./CaDynamics_E2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_HVA.c: ../mod/Ca_HVA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Ca_HVA.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./Ca_HVA.o: ./Ca_HVA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_LVAst.c: ../mod/Ca_LVAst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Ca_LVAst.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./Ca_LVAst.o: ./Ca_LVAst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./GABAAB_EMS.c: ../mod/GABAAB_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) GABAAB_EMS.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./GABAAB_EMS.o: ./GABAAB_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih.c: ../mod/Ih.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Ih.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./Ih.o: ./Ih.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./Im.c: ../mod/Im.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Im.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./Im.o: ./Im.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_Pst.c: ../mod/K_Pst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) K_Pst.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./K_Pst.o: ./K_Pst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_Tst.c: ../mod/K_Tst.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) K_Tst.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./K_Tst.o: ./K_Tst.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./NMDAg.c: ../mod/NMDAg.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) NMDAg.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./NMDAg.o: ./NMDAg.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTa_t.c: ../mod/NaTa_t.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) NaTa_t.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./NaTa_t.o: ./NaTa_t.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTs2_t.c: ../mod/NaTs2_t.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) NaTs2_t.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./NaTs2_t.o: ./NaTs2_t.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./Nap_Et2.c: ../mod/Nap_Et2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Nap_Et2.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./Nap_Et2.o: ./Nap_Et2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbAMPANMDA2.c: ../mod/ProbAMPANMDA2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) ProbAMPANMDA2.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./ProbAMPANMDA2.o: ./ProbAMPANMDA2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbAMPANMDA_3.c: ../mod/ProbAMPANMDA_3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) ProbAMPANMDA_3.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./ProbAMPANMDA_3.o: ./ProbAMPANMDA_3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbAMPANMDA_David.c: ../mod/ProbAMPANMDA_David.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) ProbAMPANMDA_David.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./ProbAMPANMDA_David.o: ./ProbAMPANMDA_David.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbAMPANMDA_EMS.c: ../mod/ProbAMPANMDA_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) ProbAMPANMDA_EMS.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./ProbAMPANMDA_EMS.o: ./ProbAMPANMDA_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbGABAAB_EMS.c: ../mod/ProbGABAAB_EMS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) ProbGABAAB_EMS.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./ProbGABAAB_EMS.o: ./ProbGABAAB_EMS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./ProbUDFsyn2.c: ../mod/ProbUDFsyn2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) ProbUDFsyn2.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./ProbUDFsyn2.o: ./ProbUDFsyn2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./SK_E2.c: ../mod/SK_E2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) SK_E2.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./SK_E2.o: ./SK_E2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./SKv3_1.c: ../mod/SKv3_1.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) SKv3_1.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./SKv3_1.o: ./SKv3_1.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./UDFsyn2.c: ../mod/UDFsyn2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) UDFsyn2.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./UDFsyn2.o: ./UDFsyn2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
+./epsp.c: ../mod/epsp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod"; MODLUNIT=$(NRNUNITS) $(NOCMODL) epsp.mod -o "/Users/gili/Desktop/NewJupyter/x86_64")
+
+./epsp.o: ./epsp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mod" $(INCLUDES) -fPIC -c $< -o $@
+
